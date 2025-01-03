@@ -1,0 +1,17 @@
+{% set query = hookable_metadata.context.resource %}
+
+<div class="page-body">
+    <div class="container-xl">
+        <div class="card mb-3">
+            <div class="card-header">
+                <div class="card-title" {{ sylius_test_html_attribute('name') }}>
+                    {{ query.name }}
+                </div>
+            </div>
+            <div class="card-body" {{ sylius_test_html_attribute('description') }}>
+                <strong>Description:</strong>
+                {{ query.description }}
+            </div>
+        </div>
+    </div>
+</div>

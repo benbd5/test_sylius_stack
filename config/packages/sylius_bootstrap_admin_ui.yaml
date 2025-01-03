@@ -1,0 +1,8 @@
+imports:
+    - { resource: '@SyliusBootstrapAdminUiBundle/config/app.php' }
+
+sylius_twig_hooks:
+    hooks:
+        'sylius_admin.query.show.content':
+            body:
+                template: 'query/show/content/body.html.twig'
